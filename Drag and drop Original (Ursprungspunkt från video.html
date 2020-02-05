@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="favicon.ico">
+  <title>Drag and drop</title>
+	<style type="text/css">
+	*
+	{
+	margin: 0px;
+	padding: 0px;
+	}
+
+	.dragzone,.dropzone,.thirdzone,.fourthzone
+	{
+	height:400px;
+	width: 700px;
+	position: relative;
+	border: 2px solid black;
+	float: left;
+	margin-top: 0px;
+	margin-left: 0%; 
+	max-width: initial;
+	overflow: hidden;
+	}
+	.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+	</style>
+
+</head>
+<body class="noSelect" onclick="onClick(event)">
+	<div class="dragzone" ondragover="allowDrop(event)" ondrop="drop(event)">
+	<IMG SRC="MYPIC.JPG" HEIGHT="auto" id="dragelement" ondragstart="dragStart(event)">	
+	</div>
+
+	<div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event)">
+
+	</div>
+	
+	<div class="thirdzone" ondragover="allowDrop(event)" ondrop="drop(event)">
+
+	</div>
+		
+	<div class="fourthzone" ondragover="allowDrop(event)" ondrop="drop(event)">
+
+	</div>
+
+	<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
